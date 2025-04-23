@@ -6,7 +6,7 @@
 
 **Vulnerability description**
 
-   There is a security vulnerability in PHPGurukul Pre-School Enrollment System Project v1.0. The vulnerability is caused by a directory traversal vulnerability, which allows remote attackers to traverse directories and delete traversed files.
+   There is a security vulnerability in PHPGurukul Pre-School Enrollment System Project v1.0. The vulnerability is caused by  directory traversal vulnerability, which allows remote attackers to traverse directories and delete traversed files.
 
  PHPGurukul Project address
 
@@ -32,7 +32,6 @@
    ![4](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/4.png)
 
    Change the tpic parameter in the data packet to the problematic parameter teacherpic 
-   ![5](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/6.png)
    Transformed into attack payload  
 
     GET /Pre-School-Enrollment-System-PHP/preschool/admin/manage-classes.php?action=delete&&cid=6&&teacherpic=../../../../bbb.txt HTTP/1.1
@@ -52,9 +51,11 @@
     sec-ch-ua-platform: "Windows"
 
    Create bbb.txt test file in  D:\phpstudy_pro\WWW
-       ![6](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/微信截图_20250423153628.png)   
+       ![5](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/微信截图_20250423153628.png)   
 
-   Send payload, bbb.txt file has been deleted   
+   Send payload,
+   ![6](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/6.png)
+   bbb.txt file has been deleted   
    ![7](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/5.png)    
    This directory traversal vulnerability can cause the traversed files to be deleted.
 
