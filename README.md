@@ -2,7 +2,7 @@
 
 **PHPGurukul  Pre-School Enrollment System Project introduce**
    
-   PHPGurukul Pre-School Enrollment System Project is a web-based pre-school enrollment system by PHPGurukul manage-classes.php.   
+   PHPGurukul Pre-School Enrollment System Project is a web-based pre-school enrollment system by PHPGurukul.   
 
 **Vulnerability description**
 
