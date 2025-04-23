@@ -14,18 +14,18 @@
    https://phpgurukul.com/pre-school-enrollment-system-using-php-and-mysql/
 
    During the code audit, it was found that there was a problem with profilepic in the manage-classes.php file   
-   ![1](https://github.com/baixiaobi/TST/blob/image/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250210100513.png)   
+   ![1](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250423150403.png)   
    After analyzing the code, we tried to exploit the vulnerability
    
    **Loophole principle**
    
    Log in to the system backend management system
      
-   ![2](https://github.com/baixiaobi/TST/blob/image/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250210100551.png)
+   ![2](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/2.png)
       
-   Find the vulnerable function in the manage-teachers.php article, manage-teachers-delete
+   Find the vulnerable function in the manage-classes.php article, manage-classes-delete
   
-   ![3](https://github.com/baixiaobi/TST/blob/image/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250210100037.png)
+   ![3](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/3.png)
   
    Intercept the data packet and find the problematic parameter profilepic
    
