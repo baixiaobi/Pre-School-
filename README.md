@@ -13,7 +13,7 @@
    
    https://phpgurukul.com/pre-school-enrollment-system-using-php-and-mysql/
 
-   During the code audit, it was found that there was a problem with profilepic in the manage-classes.php file   
+   During the code audit, it was found that there was a problem with teacherpic in the manage-classes.php file   
    ![1](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/%E5%BE%AE%E4%BF%A1%E6%88%AA%E5%9B%BE_20250423150403.png)   
    After analyzing the code, we tried to exploit the vulnerability
    
