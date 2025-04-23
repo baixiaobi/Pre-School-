@@ -23,7 +23,7 @@
      
    ![2](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/2.png)
       
-   Find the vulnerable function in the manage-classes.php article, manage-classes-delete
+   Find the vulnerable functionality in the manage-classes.php page, manage-classes-delete
   
    ![3](https://github.com/baixiaobi/Pre-School-/blob/main/screenshot/3.png)
   
